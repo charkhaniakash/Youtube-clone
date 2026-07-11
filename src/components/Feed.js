@@ -24,7 +24,7 @@ const Feed = () => {
 
   useEffect(() => {
     fetchFromApi(`search?part=snippet&q=${selectedCategory}`)
-      .then((data) => setVideos(data.items))
+    .then((data) => setVideos(data.item))
   }, [selectedCategory]);
 
   return (
